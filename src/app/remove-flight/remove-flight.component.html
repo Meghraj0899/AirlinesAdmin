@@ -1,0 +1,18 @@
+<!-- <h1>Remove Flight</h1> -->
+
+<div class="srcbg">
+    <h1>Remove Flight</h1>
+    <form #RemoveFlight="ngForm" (ngSubmit)="removeFlight()" >
+        <table>
+            <tr>
+                <td><label for="ID">Flight No</label></td>
+                <td><input type="text" name="ID" [(ngModel)]="ID"></td>
+            </tr>
+          
+            <tr>
+                <td><input type="submit" value="DeleteFlight" style="color: blue;"></td> 
+            </tr>
+        </table>
+
+    </form>
+</div>

@@ -1,0 +1,144 @@
+<head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+
+
+<div  >
+    <table class="table">
+      <thead class="table-head bg-primary">
+        <tr>
+          <th scope="col">Airline</th>
+          <th scope="col">No of Seats</th>
+          <th scope="col">Fare</th>
+          <th scope="col">Source</th>
+          <th >Destination</th>
+          <th>            Schedule</th>
+        </tr>
+        
+      </thead>
+      <br>
+      <tbody *ngFor="let f of flights; let i=index"  >
+        <tr>
+         <td>
+             <h5>F_no  :{{f.flight_no}}</h5>
+             <h5>F_name:{{f.flight_name}}</h5>
+         </td>
+         <td>
+              <h5>Eco :{{f.no_of_economic_seats}}</h5>
+              <h5>Bus :{{f.no_of_business_seats}}</h5>
+  
+         </td>
+         <td>
+          <h5>Eco :{{f.economic_class_fare}}</h5>
+          <h5>Bus :{{f.business_class_fare}}</h5>
+          
+         </td>
+         <td>
+          <h5>{{f.source}}</h5>
+         </td>
+         <td>
+          <h5>{{f.destination}}</h5>
+         </td>
+         <td>
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button"  routerLink="/AddSchedule" class="btn btn-success" (click)="attach(f)">Add Schedule</button>
+            <button type="button" routerLink="/RemoveSchedule" class="btn btn-danger">Remove Schedule</button>
+            
+          </div>
+           <!-- <button (click)="schedule(i,flights.length,f)" class="btn-success">Click Here To Schedule</button>
+
+
+           <div class="in" *ngIf="clickToSchedule[i]" >
+            <form #ScheduleFlight="ngForm" (ngSubmit)="saveSchedule()" >
+                <table>
+                    <tr>
+                        <td><label for="scheduleId">Schedule ID</label></td>
+                        <td><input type="number" name="schedule_id" [(ngModel)]="schedules.scheduleId"></td>
+
+                        <td><label for="admin_id">Admin ID</label></td>
+                        <td><input type="number" name="admin_id" [(ngModel)]="schedules.adminId"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="arrival_date">Arrival Date</label></td>
+                        <td><input type="date" name="arrival_date" [(ngModel)]="schedules.arrival_date"></td>
+        
+                        <td><label for="departure_date">departure Date</label></td>
+                        <td><input type="date" name="departure_date" [(ngModel)]="schedules.departure_date"></td>
+        
+                    </tr>
+                    <tr>
+                        <td><label for="departure_time">Departure Time</label></td>
+                        <td><input type="text" name="departure_time" [(ngModel)]="schedules.departure_time"></td>
+        
+                        <td><label for=" arrival_time">Arrival Time</label></td>
+                        <td><input type="text" name=" arrival_time" [(ngModel)]="schedules.arrival_time"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="no_of_available_economic_seats">Availaible Economic Seats</label></td>
+                        <td><input type="number" name="no_of_available_economic_seats" [(ngModel)]="schedules.no_of_available_economic_seats"></td>
+        
+                        <td><label for="no_of_available_business_seats">Available Business Seats</label></td>
+                        <td><input type="number" name="no_of_available_business_seats" [(ngModel)]="schedules.no_of_available_business_seats"></td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Add" style="color: blue;"></td>         
+                    </tr>
+                </table>
+        
+            </form>
+        </div>
+ -->
+
+
+         </td>
+        </tr>
+        <br>
+      </tbody>
+    </table> 
+</div>
+
+
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

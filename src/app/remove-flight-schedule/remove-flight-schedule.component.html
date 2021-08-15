@@ -1,0 +1,16 @@
+<div class="srcbg">
+    <h1>Remove Flight Schedule</h1>
+    <form #RemoveFlight="ngForm" (ngSubmit)="removeFlightSchedule()" >
+        <table>
+            <tr>
+                <td><label for="flightScheduleNo">Schedule ID</label></td>
+                <td><input  placeholder="Enter Schedule Id" type="number" name="flightScheduleNo" [(ngModel)]="flightScheduleNo"></td>
+            </tr>
+          
+            <tr>
+                <td><input type="submit" value="Remove Schedule" style="color: blue;"></td> 
+            </tr>
+        </table>
+
+    </form>
+</div>

@@ -1,0 +1,56 @@
+
+<div class="srcbg">
+
+    <h1>Update Flight</h1>
+    <form #AddFlight="ngForm" (ngSubmit)="saveData()" >
+        <table>
+            <tr>
+                <td><label for="flight_no">Flight No</label></td>
+                <td><input type="text" name="flight_no" [(ngModel)]="f.flight_no"></td>
+                <td><label for="flight_name">Flight Name</label></td>
+                <td><input type="text" name="flight_name" [(ngModel)]="f.flight_name"></td>
+            </tr>
+            <tr>
+                <td><label for="source">From</label></td>
+                <td><input type="text" name="source" [(ngModel)]="f.source"></td>
+                <td><label for="destination">To</label></td>
+                <td><input type="text" name="destination" [(ngModel)]="f.destination"></td>
+
+            </tr>
+            <tr>
+                <td><label for="duration">Duration</label></td>
+                <td><input type="text" name="duration" [(ngModel)]="f.duration"></td>
+
+                <td><label for="status">Status</label></td>
+                <td><input type="text" name="status" [(ngModel)]="f.status"></td>
+
+            </tr>
+            <tr>
+                
+                <td><label for="economic_class_fare">Economic_Class_Fare</label></td>
+                <td><input type="text" name="economic_class_fare" [(ngModel)]="f.economic_class_fare"></td>
+
+                <td><label for="business_class_fare">Business_Class_Fare</label></td>
+                <td><input type="text" name="business_class_fare" [(ngModel)]="f.business_class_fare"></td>
+
+            </tr>
+            <tr>
+               
+                <td><label for="no_of_economic_seats">No_of_Economic_Seats</label></td>
+                <td><input type="text" name="no_of_economic_seats" [(ngModel)]="f.no_of_economic_seats"></td>
+
+                <td><label for="no_of_business_seats">No_of_Business_Seats</label></td>
+                <td><input type="text" name="no_of_business_seats" [(ngModel)]="f.no_of_business_seats"></td>
+
+
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                <td><input type="submit" value="Update" style="color: blue;"></td>       
+            </tr>
+        </table>
+
+    </form>
+</div>

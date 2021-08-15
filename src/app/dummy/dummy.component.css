@@ -1,0 +1,54 @@
+.table-head{
+
+    background-color: blue;
+    color: white;
+
+}
+
+.flighttable{
+    width: 90%;
+    margin: 25px;
+    padding: 10px;
+    border-collapse:collapse;
+    text-align: center;
+    
+}
+
+.f1{
+    text-align: right;
+}
+
+.flights{
+    background-color: white;
+    
+    text-align: center;
+    height: 100px;
+
+}
+
+.div1{
+
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+
+}
+.div1:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+
+
+.btn{
+
+    color: white;
+    background-color: blue;
+    border: 1px darkblue solid;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    }

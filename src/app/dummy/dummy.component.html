@@ -1,0 +1,155 @@
+<div class="div1">
+    <div class="column">
+         
+    <table class="flighttable">
+        <thead class="table-head">
+          <tr>
+            <th scope="col">Airline</th>
+            <th scope="col">Departure</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Arrival</th>
+            <th scope="col">Price</th>
+          </tr>
+          
+        </thead>
+        <br>
+        <tbody>
+            <tr class="flights">
+             <td>
+                 <h5>Flight No</h5>
+                 <h5>Flight Name</h5>
+             </td>
+             <td>
+                  <h5>16:30</h5>
+                  <h5>MUMBAI(BOM)</h5>
+                  <h5>Sun, 8 Aug 2021</h5>
+      
+             </td>
+             <td>
+              <h5>02h:40m</h5>
+              <h5>Non-Stop</h5>
+              
+             </td>
+             <td>
+              <h5>19:30</h5>
+              <h5>DELHI(DEL)</h5>
+              <h5>Sun, 8 Aug 2021</h5>
+             </td>
+             <td>
+                  <h5>Rs. 5000</h5>
+                  <button type="button" class="btn">Select</button>
+             </td>
+            </tr>
+            <br>
+            <tr class="flights">
+              <td>
+                  <h5>Flight No1</h5>
+                  <h5>Flight Name1</h5>
+              </td>
+              <td>
+                   <h5>16:30</h5>
+                   <h5>MUMBAI(BOM)</h5>
+                   <h5>Sun, 8 Aug 2021</h5>
+       
+              </td>
+              <td>
+               <h5>02h:40m</h5>
+               <h5>Non-Stop</h5>
+               
+              </td>
+              <td>
+               <h5>19:30</h5>
+               <h5>DELHI(DEL)</h5>
+               <h5>Sun, 8 Aug 2021</h5>
+              </td>
+              <td>
+                   <h5>Rs. 5000</h5>
+                   <button type="button" class="btn">Select</button>
+              </td>
+             </tr>
+             <br>
+             <tr class="flights">
+              <td>
+                  <h5>Flight No2</h5>
+                  <h5>Flight Name2</h5>
+              </td>
+              <td>
+                   <h5>16:30</h5>
+                   <h5>MUMBAI(BOM)</h5>
+                   <h5>Sun, 8 Aug 2021</h5>
+       
+              </td>
+              <td>
+               <h5>02h:40m</h5>
+               <h5>Non-Stop</h5>
+               
+              </td>
+              <td>
+               <h5>19:30</h5>
+               <h5>DELHI(DEL)</h5>
+               <h5>Sun, 8 Aug 2021</h5>
+              </td>
+              <td>
+                   <h5>Rs. 5000</h5>
+                   <button type="button" class="btn " (click)="toggle()">Schedule</button>
+              </td>
+             </tr>
+             <br>
+          </tbody>        
+      </table> 
+    </div>
+    
+    <div *ngIf="false" class="column">
+        <h1>Schedule Flights</h1>
+<div >
+    <form #ScheduleFlight="ngForm" (ngSubmit)="saveSchedule()" >
+        <table>
+            <tr>
+                <td><label for="scheduleId">Schedule ID</label></td>
+                <td><input type="number" name="schedule_id" [(ngModel)]="schedule.scheduleId"></td>
+
+                <td><label for="flight_number">Flight No</label></td>
+                <td><input type="text" name="flight_number" [(ngModel)]="schedule.flight_number"></td>
+            </tr>
+            <tr>
+                <td><label for="arrival_date">Arrival Date</label></td>
+                <td><input type="date" name="arrival_date" [(ngModel)]="schedule.arrival_date"></td>
+
+                <td><label for="departure_date">departure Date</label></td>
+                <td><input type="date" name="departure_date" [(ngModel)]="schedule.departure_date"></td>
+
+            </tr>
+            <tr>
+                <td><label for="departure_time">Departure Time</label></td>
+                <td><input type="text" name="departure_time" [(ngModel)]="schedule.departure_time"></td>
+
+                <td><label for=" arrival_time">Arrival Time</label></td>
+                <td><input type="text" name=" arrival_time" [(ngModel)]="schedule.arrival_time"></td>
+            </tr>
+            <tr>
+                <td><label for="no_of_available_economic_seats">Availaible Economic Seats</label></td>
+                <td><input type="number" name="no_of_available_economic_seats" [(ngModel)]="schedule.no_of_available_economic_seats"></td>
+
+                <td><label for="no_of_available_business_seats">Available Business Seats</label></td>
+                <td><input type="number" name="no_of_available_business_seats" [(ngModel)]="schedule.no_of_available_business_seats"></td>
+            </tr>
+            <tr>
+                <td><label for="admin_id">Admin ID</label></td>
+                <td><input type="number" name="admin_id" [(ngModel)]="schedule.adminId"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Add" style="color: blue;"></td>         
+            </tr>
+        </table>
+
+    </form>
+</div>
+
+        
+    </div>
+    
+    
+    </div>
+    <div style="text-align: center;">
+        <button type="submit" class="btn">Submit</button>    
+    </div>

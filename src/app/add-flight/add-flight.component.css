@@ -1,0 +1,45 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    background-image: url("/src/assets/airplaneBg.jpg");
+}
+    
+.srcbg{
+    margin-top: 8%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 20%;
+    border: solid 1px;
+    padding: 10px;
+    padding-left: 15px;
+    box-shadow: 8px 8px 5px grey;
+    background-color: #FFD580;
+}
+
+input, select {
+    border-width: 0 0 2px;
+    border-color: blue;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+
+input:focus {
+    border-color: #d1d1cf !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+h1{
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 750px) {
+    /* For desktop: */
+    .ab{
+        width: 100%;
+    }
+  }
+  bp{
+    background-image: url("C:\Project Gladiator\AirlinesApp\src\assets\images\airplane-wallpaper-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

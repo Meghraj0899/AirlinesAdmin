@@ -1,0 +1,42 @@
+<h1>Schedule Flights</h1>
+<div  class="srcbg">
+    <form #ScheduleFlight="ngForm" (ngSubmit)="saveSchedule()" >
+        <table>
+            <tr>
+                 <!-- <td><label for="scheduleId">Schedule ID</label></td>
+                <td><input type="number" name="schedule_id" [(ngModel)]="schedule.scheduleId"></td> -->
+                <td><label for="admin_id">Admin ID</label></td>
+                <td><input type="number" name="admin_id" [(ngModel)]="schedule.adminId"></td>
+
+                <td><label for="flight_number">Flight No</label></td>
+                <td><input type="text" name="flight_number" [(ngModel)]="schedule.flight_number">
+            </tr>
+            <tr>
+                <td><label for="arrival_date">Arrival Date</label></td>
+                <td><input type="date" name="arrival_date" [(ngModel)]="schedule.arrival_date"></td>
+
+                <td><label for="departure_date">departure Date</label></td>
+                <td><input type="date" name="departure_date" [(ngModel)]="schedule.departure_date"></td>
+
+            </tr>
+            <tr>
+                <td><label for="departure_time">Departure Time</label></td>
+                <td><input type="text" name="departure_time" [(ngModel)]="schedule.departure_time"></td>
+
+                <td><label for=" arrival_time">Arrival Time</label></td>
+                <td><input type="text" name=" arrival_time" [(ngModel)]="schedule.arrival_time"></td>
+            </tr>
+            <tr>
+                <td><label for="no_of_available_economic_seats">Availaible Economic Seats</label></td>
+                <td><input type="number" name="no_of_available_economic_seats" [(ngModel)]="schedule.no_of_available_economic_seats"></td>
+
+                <td><label for="no_of_available_business_seats">Available Business Seats</label></td>
+                <td><input type="number" name="no_of_available_business_seats" [(ngModel)]="schedule.no_of_available_business_seats"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Add" ></td>         
+            </tr>
+        </table>
+
+    </form>
+</div>

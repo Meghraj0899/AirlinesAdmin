@@ -1,0 +1,49 @@
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div >
+    <table class="table">
+      <thead class="table-head bg-primary">
+        <tr>
+          <th scope="col">Airline</th>
+          <th scope="col">Arrival </th>
+          <th scope="col">Departure</th>
+          <th scope="col">Number Of Available Seats</th>
+        </tr>
+        
+      </thead>
+      <br>
+      <tbody *ngFor="let s of schedules">
+        <tr>
+         <td>
+             <h5>S-Id  : {{s.scheduleId}}</h5>
+             <h5>F_no: {{s.flight_number}}</h5>
+         </td>
+         <td>
+              <h5>ArrivalDate : {{s.arrival_date}}</h5>
+              <h5>ArrivalTime : {{s.arrival_time}}</h5>
+  
+         </td>
+         <td>
+          <h5>DepartDate : {{s.departure_date}}</h5>
+          <h5>DepartTime : {{s.departure_time}}</h5>
+          
+         </td>
+         <td>
+          <h5>E_Seats: {{s. no_of_available_economic_seats}}</h5>
+          <h5>B_Seats: {{s.no_of_available_business_seats}}</h5>
+         </td>
+         <td>
+         </td>
+        </tr>
+        <br>
+      </tbody>
+    </table> 
+</div>
+</body>
